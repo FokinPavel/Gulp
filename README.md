@@ -11,6 +11,7 @@
 
 ### Also:
 * That support BEM-methodology
+* That work with 1c-bitrix structure
 
 ### Structure your project:
 * Coming soon...
