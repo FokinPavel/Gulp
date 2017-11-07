@@ -1,0 +1,59 @@
+@import '../grid'
+@import 'normalize.min.css'
+
+$orangeColor = #fe9526
+
+@font-face
+  font-family 'PFCentroSansPro-Reg'
+  font-style normal
+  font-weight normal
+  src local('PFCentroSansPro-Reg'),
+      local('PFCentroSansPro-Reg'),
+      url('fonts/PFCentroSansPro-Reg.otf');
+
+@font-face
+  font-family 'Gilroy-Light'
+  font-style normal
+  font-weight normal
+  src local('Gilroy-Light'),
+      local('Gilroy-Light'),
+      url('fonts/Gilroy-Light.otf')
+
+@font-face
+  font-family 'Gilroy-ExtraBold'
+  src url('fonts/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Gilroy-ExtraBold.otf') format('opentype'),
+      url('fonts/Gilroy-ExtraBold.woff') format('woff'),
+      url('fonts/Gilroy-ExtraBold.ttf') format('truetype'),
+      url('fonts/Gilroy-ExtraBold.svg#Gilroy-ExtraBold') format('svg')
+  font-weight normal
+  font-style normal
+
+html,
+body
+  margin 0px
+  padding 0px
+  font-family 'PFCentroSansPro-Reg'
+  min-width 320px
+
+body:after
+  w450('content','mobile')
+  w450('font-size',0)
+
+.clear-both
+  clear both
+
+// header
+@import 'styl/header/header.styl'
+@import 'styl/select-city/select-city.styl'
+@import 'styl/callback/callback.styl'
+@import 'styl/logotype/logotype.styl'
+@import 'styl/top-menu/top-menu.styl'
+@import 'styl/two-level-menu/two-level-menu.styl'
+@import 'styl/top-submenu/top-submenu.styl'
+
+// Виды продукции
+@import 'styl/products-types/products-types.styl'
+
+// Контакты
+@import 'styl/contacts/contacts.styl'
